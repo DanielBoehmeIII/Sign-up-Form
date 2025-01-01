@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.container-left {
+  background-image: url(https://images.unsplash.com/photo-1733969020103-4e2821445dd0?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=m3wxmja3fdb8mhxwag90by1wywdlfhx8fgvufdb8fhx8fa%3d%3d);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+#banner {
+  background-color: #393a3f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: "Norse Bold";
+  margin-top: 30%;
+  padding: 5%;
+}
+
+#banner img {
+  width: 20%;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  gap: 10px;
+  padding: 5%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+}
+
+.bottom-container > div {
+  display: flex;
+  flex-direction: row;
+}

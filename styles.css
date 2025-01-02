@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url(Norse-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -22,6 +28,18 @@ body {
 }
 
 #banner {
+  font-family:
+    "Norse Bold",
+    -apple-system,
+    blinkmacsystemfont,
+    "segoe ui",
+    roboto,
+    oxygen,
+    ubuntu,
+    cantarell,
+    "open sans",
+    "helvetica neue",
+    sans-serif;
   background-color: #393a3f;
   color: white;
   display: flex;
@@ -37,45 +55,14 @@ body {
   width: 20%;
 }
 
+.container-left > span {
+  background-color: white;
+}
+
 .container-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.top-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.title-container {
-  gap: 10px;
-  padding: 5%;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 5px 5px 5px 5px #888888;
-}
-
-.form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 5%;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-input {
-  flex: 1;
+  background-image: url(https://images.unsplash.com/photo-1604712312066-9b9433023576?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .bottom-container {
@@ -85,7 +72,73 @@ input {
   padding: 5%;
 }
 
-.bottom-container > div {
+.top-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+  background-color: white;
+}
+
+.control-container {
+  box-shadow: 5px 5px 5px 5px #888888;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+}
+
+form {
+  display: flex;
+  align-items: space-between;
+}
+
+.column-left,
+.column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-container {
+  background-color: white;
+}
+
+.bottom-container > span {
   display: flex;
   flex-direction: row;
+}
+
+button {
+  width: 25%;
+  padding: 15px;
+  color: white;
+  background-color: #596d48;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.credit-div {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  background-color: white;
+  padding-left: 5%;
+  padding-top: 0;
 }

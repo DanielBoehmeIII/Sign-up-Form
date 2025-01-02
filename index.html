@@ -9,13 +9,16 @@
   <body>
     <div class="container-left">
       <div id="banner">
-        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+        <img
+          src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+          alt="Odin Project Logo"
+        />
         <h1>ODIN</h1>
       </div>
       <span>
-        "Photo by "
-        <a href="https://unsplash.com/@justzh">Haotian Zheng</a> 
-        " on "
+        Photo by&nbsp;
+        <a href="https://unsplash.com/@justzh">Haotian Zheng&nbsp;</a>
+        on&nbsp;
         <a href="https://unsplash.com">Unsplash</a>
       </span>
     </div>
@@ -28,44 +31,61 @@
           </h1>
           <h1>Sign up <em>now</em> to book your trip</h1>
         </div>
-        <div class="form-container">
-          <h1 class="title3">Let's do this!</h1>
-          <form action id="form">
-            <label for="first-name">
-              FIRST NAME
-              <input type="text" id="first-name" name="first-name" required />
-            </label>
-            <label for="last-name">
-              LAST NAME
-              <input type="text" id="last-name" name="last-name" required />
-            </label>
-            <label for="email">
-              E-MAIL
-              <input type="email" id="email" name="email" required />
-            </label>
-            <label for="phone">
-              PHONE NUMBER
-              <input type="tel" id="phone" name="phone" required />
-            </label>
-            <label for="password">
-              PASSWORD
-              <input type="password" id="n5" name="password" required />
-            </label>
-            <label for="confirm">
-              CONFIRM PASSWORD
-              <input type="password" id="confirm" name="confirm" required />
-            </label>
+        <div class="control-container">
+          <div class="form-container">
+            <h1 class="title3">Let's do this!</h1>
+            <form action id="form">
+              <div class="column-left">
+                <label for="first-name">
+                  FIRST NAME
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </label>
+                <label for="email">
+                  E-MAIL
+                  <input type="email" id="email" name="email" required />
+                </label>
+                <label for="password">
+                  PASSWORD
+                  <input type="password" id="n5" name="password" required />
+                </label>
+              </div>
+              <div class="column-right">
+                <label for="last-name">
+                  LAST NAME
+                  <input type="text" id="last-name" name="last-name" required />
+                </label>
+                <label for="phone">
+                  PHONE NUMBER
+                  <input type="tel" id="phone" name="phone" required />
+                </label>
+                <label for="confirm">
+                  CONFIRM PASSWORD
+                  <input type="password" id="confirm" name="confirm" required />
+                </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
       <div class="bottom-container">
-        <p>
-          <button>Create Account</button>
-        </p>
-        <div>
-          <p>Already have an account?&nbsp;</p>
-          <a href="google.com" class="login">Log in</ahref>
-        </div>
+        <button>Create Account</button>
+        <span>
+          Already have an account?&nbsp;
+          <a href="https://google.com" class="login">Log in</a>
+        </span>
+      </div>
+      <div class="credit-div">
+        <span>
+          Photo by&nbsp;
+          <a href="https://unsplash.com/@patwhelen">Pat Whelen&nbsp;</a>
+          on&nbsp;
+          <a href="https://unsplash.com">Unsplash</a>
+        </span>
       </div>
     </div>
     <script src="javascript.js"></script>

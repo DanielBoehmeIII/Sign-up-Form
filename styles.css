@@ -1,22 +1,141 @@
-* {
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 @font-face {
   font-family: "Norse Bold";
   src: url(Norse-Bold.otf);
   font-weight: normal;
   font-style: normal;
 }
-
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
-
 .container-left {
   background-image: url(https://images.unsplash.com/photo-1733969020103-4e2821445dd0?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=m3wxmja3fdb8mhxwag90by1wywdlfhx8fgvufdb8fhx8fa%3d%3d);
   background-position: center;
@@ -26,7 +145,6 @@ body {
   justify-content: space-between;
   width: 35%;
 }
-
 #banner {
   font-family:
     "Norse Bold",
@@ -50,33 +168,36 @@ body {
   margin-top: 30%;
   padding: 5%;
 }
-
 #banner img {
   width: 20%;
 }
-
-.container-left > span {
-  background-color: white;
+#banner > h1 {
+  font-size: 10rem;
 }
-
+.credit-div1 {
+  display: flex;
+  align-items: flex-end;
+  background-color: white;
+  padding-bottom: 0.5%;
+  justify-content: center;
+}
 .container-right {
   display: flex;
   flex-direction: column;
   background-image: url(https://images.unsplash.com/photo-1604712312066-9b9433023576?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 65%;
 }
-
 .bottom-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 5%;
 }
-
 .top-container {
   display: flex;
   flex-direction: column;
+  font-size: 2.5rem;
 }
-
 .title-container {
   display: flex;
   flex-direction: column;
@@ -84,61 +205,72 @@ body {
   padding: 5%;
   background-color: white;
 }
-
 .control-container {
   box-shadow: 5px 5px 5px 5px #888888;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px 0;
   padding: 5%;
 }
-
 form {
   display: flex;
-  align-items: space-between;
+  font-size: 1.5rem;
 }
-
 .column-left,
 .column-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
+  width: 48%;
+  gap: 10px;
 }
-
 label {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
+  font-weight: 100;
 }
-
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+input:focus {
+  outline: 0.5px solid blue;
+  box-shadow: 5px 5px 10px grey;
+}
 .bottom-container {
+  padding-left: 5%;
+  padding-top: 3%;
   background-color: white;
 }
-
 .bottom-container > span {
   display: flex;
   flex-direction: row;
+  font-size: 1.2rem;
+  padding-top: 0.5%;
 }
-
 button {
-  width: 25%;
+  width: 15%;
   padding: 15px;
   color: white;
   background-color: #596d48;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 1.2rem;
+  display: block;
 }
-
-.credit-div {
+.credit-div2 {
   display: flex;
   flex-grow: 1;
   align-items: flex-end;
   background-color: white;
-  padding-left: 5%;
-  padding-top: 0;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  justify-content: center;
 }
